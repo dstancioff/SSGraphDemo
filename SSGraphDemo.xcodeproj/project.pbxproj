@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E09FD2315A7EF5A0092DEFE /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300F015A7E49600A2C2D0 /* MainView.m */; };
+		0E09FD4C15A7EF700092DEFE /* AnnotationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300EA15A7E48700A2C2D0 /* AnnotationProvider.m */; };
+		0E09FD4E15A7EF710092DEFE /* CSVFetchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300EC15A7E48700A2C2D0 /* CSVFetchOperation.m */; };
+		0E09FD5015A7EF710092DEFE /* YahooHistoricalCSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300EE15A7E48700A2C2D0 /* YahooHistoricalCSV.m */; };
+		0EBDD04D18BC864F00BFBEBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBDD04C18BC864F00BFBEBA /* Images.xcassets */; };
+		0ED3007915A7DF1C00A2C2D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED3007815A7DF1C00A2C2D0 /* UIKit.framework */; };
+		0ED3007B15A7DF1C00A2C2D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED3007A15A7DF1C00A2C2D0 /* Foundation.framework */; };
+		0ED3007D15A7DF1C00A2C2D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED3007C15A7DF1C00A2C2D0 /* CoreGraphics.framework */; };
+		0ED3008315A7DF1C00A2C2D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ED3008115A7DF1C00A2C2D0 /* InfoPlist.strings */; };
+		0ED3008515A7DF1C00A2C2D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3008415A7DF1C00A2C2D0 /* main.m */; };
+		0ED3008915A7DF1C00A2C2D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3008815A7DF1C00A2C2D0 /* AppDelegate.m */; };
+		0ED3008C15A7DF1C00A2C2D0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED3008A15A7DF1C00A2C2D0 /* MainStoryboard.storyboard */; };
+		0ED300D115A7E41A00A2C2D0 /* SSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3009815A7E41A00A2C2D0 /* SSAnnotation.m */; };
+		0ED300D215A7E41A00A2C2D0 /* SSAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3009B15A7E41A00A2C2D0 /* SSAnnotationView.m */; };
+		0ED300D315A7E41A00A2C2D0 /* SSImageAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3009D15A7E41A00A2C2D0 /* SSImageAnnotationView.m */; };
+		0ED300D415A7E41A00A2C2D0 /* SSAxisProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300A015A7E41A00A2C2D0 /* SSAxisProvider.m */; };
+		0ED300D515A7E41A00A2C2D0 /* SSHorizontalAxisPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300A215A7E41A00A2C2D0 /* SSHorizontalAxisPoint.m */; };
+		0ED300D615A7E41A00A2C2D0 /* SSVerticalAxisPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300A415A7E41A00A2C2D0 /* SSVerticalAxisPoint.m */; };
+		0ED300D715A7E41A00A2C2D0 /* SSDataPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300A815A7E41A00A2C2D0 /* SSDataPeriod.m */; };
+		0ED300D815A7E41A00A2C2D0 /* SSDataPeriodDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300AA15A7E41A00A2C2D0 /* SSDataPeriodDefinition.m */; };
+		0ED300D915A7E41A00A2C2D0 /* SSDatePeriodCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300AC15A7E41A00A2C2D0 /* SSDatePeriodCache.m */; };
+		0ED300DA15A7E41A00A2C2D0 /* SSDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300AE15A7E41A00A2C2D0 /* SSDataSet.m */; };
+		0ED300DB15A7E41A00A2C2D0 /* SSTimeBasedDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300B015A7E41A00A2C2D0 /* SSTimeBasedDataSet.m */; };
+		0ED300DC15A7E41A00A2C2D0 /* SSGraphicHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300B215A7E41A00A2C2D0 /* SSGraphicHelpers.m */; };
+		0ED300DD15A7E41A00A2C2D0 /* SSGraphPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300B415A7E41A00A2C2D0 /* SSGraphPoint.m */; };
+		0ED300DE15A7E41A00A2C2D0 /* SSGraphSyncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300B615A7E41A00A2C2D0 /* SSGraphSyncher.m */; };
+		0ED300DF15A7E41A00A2C2D0 /* SSGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300B815A7E41A00A2C2D0 /* SSGraphView.m */; };
+		0ED300E015A7E41A00A2C2D0 /* SSBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300BC15A7E41A00A2C2D0 /* SSBarStyle.m */; };
+		0ED300E115A7E41A00A2C2D0 /* SSLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300BF15A7E41A00A2C2D0 /* SSLineStyle.m */; };
+		0ED300E215A7E41A00A2C2D0 /* SSLineStyleBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300C115A7E41A00A2C2D0 /* SSLineStyleBasic.m */; };
+		0ED300E315A7E41A00A2C2D0 /* SSLineStyleShaded.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300C315A7E41A00A2C2D0 /* SSLineStyleShaded.m */; };
+		0ED300E415A7E41A00A2C2D0 /* SSAnnotationStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300C515A7E41A00A2C2D0 /* SSAnnotationStyle.m */; };
+		0ED300E515A7E41A00A2C2D0 /* SSDataSetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300C715A7E41A00A2C2D0 /* SSDataSetStyle.m */; };
+		0ED300E615A7E41A00A2C2D0 /* SSGraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300C915A7E41A00A2C2D0 /* SSGraphStyle.m */; };
+		0ED300E715A7E41A00A2C2D0 /* SSStyleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300CC15A7E41A00A2C2D0 /* SSStyleBase.m */; };
+		0ED300E815A7E41A00A2C2D0 /* SSPriceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED300CF15A7E41A00A2C2D0 /* SSPriceFormatter.m */; };
+		E60C6111B4C7DB2DD6B6245B /* UIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C6F460F819BA7EAF2844B /* UIColorAdditions.m */; };
+		E60C622B1AA481CB9D152115 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C6FF6F56CBC8CA10E8C2B /* NSDate+Utilities.m */; };
+		E60C666CBD1A228A0F01BC6A /* NSString-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C6EA00F66EA1F5FF2F498 /* NSString-Utilities.m */; };
+		E60C6671916B722BD5DD576B /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C6D20752A23223067C16D /* UIImage+Alpha.m */; };
+		E60C6A8F474C28EFF1FA8089 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C616FFCA0B8A2C51F8D76 /* UIImage+RoundedCorner.m */; };
+		E60C6C174B45A7947D7C5270 /* NSDate-Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C61CA2C399ACE6E3BCAAD /* NSDate-Calendar.m */; };
+		E60C6E0E6D8B26A81BD62102 /* NSStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C640F96017DE39ED0A236 /* NSStringBuilder.m */; };
+		E60C6E87C39D5D7C2BD4DF85 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C6BAA7E93F73B5F89A5D3 /* UIColor-Expanded.m */; };
+		E60C6F2C54452E5E1FE51ED9 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E60C68F88C464713F8FE8492 /* UIImage+Resize.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EBDD04A18BC853300BFBEBA /* Icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon152.png; path = ../Icon152.png; sourceTree = "<group>"; };
+		0EBDD04B18BC857A00BFBEBA /* Icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon76.png; path = ../Icon76.png; sourceTree = "<group>"; };
+		0EBDD04C18BC864F00BFBEBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0ED3007415A7DF1C00A2C2D0 /* SSGraphDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSGraphDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED3007815A7DF1C00A2C2D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0ED3007A15A7DF1C00A2C2D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0ED3007C15A7DF1C00A2C2D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0ED3008015A7DF1C00A2C2D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED3008215A7DF1C00A2C2D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0ED3008415A7DF1C00A2C2D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0ED3008615A7DF1C00A2C2D0 /* SSGraphDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SSGraphDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0ED3008715A7DF1C00A2C2D0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0ED3008815A7DF1C00A2C2D0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0ED3008B15A7DF1C00A2C2D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0ED3009715A7E41A00A2C2D0 /* SSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAnnotation.h; sourceTree = "<group>"; };
+		0ED3009815A7E41A00A2C2D0 /* SSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAnnotation.m; sourceTree = "<group>"; };
+		0ED3009915A7E41A00A2C2D0 /* SSAnnotationDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAnnotationDataSource.h; sourceTree = "<group>"; };
+		0ED3009A15A7E41A00A2C2D0 /* SSAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAnnotationView.h; sourceTree = "<group>"; };
+		0ED3009B15A7E41A00A2C2D0 /* SSAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAnnotationView.m; sourceTree = "<group>"; };
+		0ED3009C15A7E41A00A2C2D0 /* SSImageAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSImageAnnotationView.h; sourceTree = "<group>"; };
+		0ED3009D15A7E41A00A2C2D0 /* SSImageAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSImageAnnotationView.m; sourceTree = "<group>"; };
+		0ED3009F15A7E41A00A2C2D0 /* SSAxisProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAxisProvider.h; sourceTree = "<group>"; };
+		0ED300A015A7E41A00A2C2D0 /* SSAxisProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAxisProvider.m; sourceTree = "<group>"; };
+		0ED300A115A7E41A00A2C2D0 /* SSHorizontalAxisPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHorizontalAxisPoint.h; sourceTree = "<group>"; };
+		0ED300A215A7E41A00A2C2D0 /* SSHorizontalAxisPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHorizontalAxisPoint.m; sourceTree = "<group>"; };
+		0ED300A315A7E41A00A2C2D0 /* SSVerticalAxisPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSVerticalAxisPoint.h; sourceTree = "<group>"; };
+		0ED300A415A7E41A00A2C2D0 /* SSVerticalAxisPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSVerticalAxisPoint.m; sourceTree = "<group>"; };
+		0ED300A715A7E41A00A2C2D0 /* SSDataPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataPeriod.h; sourceTree = "<group>"; };
+		0ED300A815A7E41A00A2C2D0 /* SSDataPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataPeriod.m; sourceTree = "<group>"; };
+		0ED300A915A7E41A00A2C2D0 /* SSDataPeriodDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataPeriodDefinition.h; sourceTree = "<group>"; };
+		0ED300AA15A7E41A00A2C2D0 /* SSDataPeriodDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataPeriodDefinition.m; sourceTree = "<group>"; };
+		0ED300AB15A7E41A00A2C2D0 /* SSDatePeriodCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDatePeriodCache.h; sourceTree = "<group>"; };
+		0ED300AC15A7E41A00A2C2D0 /* SSDatePeriodCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDatePeriodCache.m; sourceTree = "<group>"; };
+		0ED300AD15A7E41A00A2C2D0 /* SSDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataSet.h; sourceTree = "<group>"; };
+		0ED300AE15A7E41A00A2C2D0 /* SSDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataSet.m; sourceTree = "<group>"; };
+		0ED300AF15A7E41A00A2C2D0 /* SSTimeBasedDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTimeBasedDataSet.h; sourceTree = "<group>"; };
+		0ED300B015A7E41A00A2C2D0 /* SSTimeBasedDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTimeBasedDataSet.m; sourceTree = "<group>"; };
+		0ED300B115A7E41A00A2C2D0 /* SSGraphicHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGraphicHelpers.h; sourceTree = "<group>"; };
+		0ED300B215A7E41A00A2C2D0 /* SSGraphicHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSGraphicHelpers.m; sourceTree = "<group>"; };
+		0ED300B315A7E41A00A2C2D0 /* SSGraphPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGraphPoint.h; sourceTree = "<group>"; };
+		0ED300B415A7E41A00A2C2D0 /* SSGraphPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSGraphPoint.m; sourceTree = "<group>"; };
+		0ED300B515A7E41A00A2C2D0 /* SSGraphSyncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGraphSyncher.h; sourceTree = "<group>"; };
+		0ED300B615A7E41A00A2C2D0 /* SSGraphSyncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSGraphSyncher.m; sourceTree = "<group>"; };
+		0ED300B715A7E41A00A2C2D0 /* SSGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGraphView.h; sourceTree = "<group>"; };
+		0ED300B815A7E41A00A2C2D0 /* SSGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSGraphView.m; sourceTree = "<group>"; };
+		0ED300BB15A7E41A00A2C2D0 /* SSBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBarStyle.h; sourceTree = "<group>"; };
+		0ED300BC15A7E41A00A2C2D0 /* SSBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBarStyle.m; sourceTree = "<group>"; };
+		0ED300BE15A7E41A00A2C2D0 /* SSLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLineStyle.h; sourceTree = "<group>"; };
+		0ED300BF15A7E41A00A2C2D0 /* SSLineStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLineStyle.m; sourceTree = "<group>"; };
+		0ED300C015A7E41A00A2C2D0 /* SSLineStyleBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLineStyleBasic.h; sourceTree = "<group>"; };
+		0ED300C115A7E41A00A2C2D0 /* SSLineStyleBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLineStyleBasic.m; sourceTree = "<group>"; };
+		0ED300C215A7E41A00A2C2D0 /* SSLineStyleShaded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLineStyleShaded.h; sourceTree = "<group>"; };
+		0ED300C315A7E41A00A2C2D0 /* SSLineStyleShaded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLineStyleShaded.m; sourceTree = "<group>"; };
+		0ED300C415A7E41A00A2C2D0 /* SSAnnotationStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAnnotationStyle.h; sourceTree = "<group>"; };
+		0ED300C515A7E41A00A2C2D0 /* SSAnnotationStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAnnotationStyle.m; sourceTree = "<group>"; };
+		0ED300C615A7E41A00A2C2D0 /* SSDataSetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDataSetStyle.h; sourceTree = "<group>"; };
+		0ED300C715A7E41A00A2C2D0 /* SSDataSetStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDataSetStyle.m; sourceTree = "<group>"; };
+		0ED300C815A7E41A00A2C2D0 /* SSGraphStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSGraphStyle.h; sourceTree = "<group>"; };
+		0ED300C915A7E41A00A2C2D0 /* SSGraphStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSGraphStyle.m; sourceTree = "<group>"; };
+		0ED300CA15A7E41A00A2C2D0 /* SSStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSStyle.h; sourceTree = "<group>"; };
+		0ED300CB15A7E41A00A2C2D0 /* SSStyleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSStyleBase.h; sourceTree = "<group>"; };
+		0ED300CC15A7E41A00A2C2D0 /* SSStyleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSStyleBase.m; sourceTree = "<group>"; };
+		0ED300CE15A7E41A00A2C2D0 /* SSPriceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPriceFormatter.h; sourceTree = "<group>"; };
+		0ED300CF15A7E41A00A2C2D0 /* SSPriceFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPriceFormatter.m; sourceTree = "<group>"; };
+		0ED300D015A7E41A00A2C2D0 /* SSFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFormatters.h; sourceTree = "<group>"; };
+		0ED300E915A7E48700A2C2D0 /* AnnotationProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnnotationProvider.h; sourceTree = "<group>"; };
+		0ED300EA15A7E48700A2C2D0 /* AnnotationProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnnotationProvider.m; sourceTree = "<group>"; };
+		0ED300EB15A7E48700A2C2D0 /* CSVFetchOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVFetchOperation.h; sourceTree = "<group>"; };
+		0ED300EC15A7E48700A2C2D0 /* CSVFetchOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVFetchOperation.m; sourceTree = "<group>"; };
+		0ED300ED15A7E48700A2C2D0 /* YahooHistoricalCSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YahooHistoricalCSV.h; sourceTree = "<group>"; };
+		0ED300EE15A7E48700A2C2D0 /* YahooHistoricalCSV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YahooHistoricalCSV.m; sourceTree = "<group>"; };
+		0ED300EF15A7E49600A2C2D0 /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		0ED300F015A7E49600A2C2D0 /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		E60C616FFCA0B8A2C51F8D76 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		E60C61CA2C399ACE6E3BCAAD /* NSDate-Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Calendar.m"; sourceTree = "<group>"; };
+		E60C62921BF726759C5B8A59 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		E60C6309CFE70430CAB2348B /* SSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSUtilities.h; sourceTree = "<group>"; };
+		E60C640AE183E98B28C1049A /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		E60C640F96017DE39ED0A236 /* NSStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringBuilder.m; sourceTree = "<group>"; };
+		E60C653A7C5166C054F09E19 /* NSString-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString-Utilities.h"; sourceTree = "<group>"; };
+		E60C68F88C464713F8FE8492 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		E60C6966B50E28C7138B54B8 /* UIColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorAdditions.h; sourceTree = "<group>"; };
+		E60C6BAA7E93F73B5F89A5D3 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
+		E60C6CA1108FCB9901DCBA94 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
+		E60C6CAD4CAC349947933BA7 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E60C6D20752A23223067C16D /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		E60C6D274AA8B4AD6460A36B /* NSStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringBuilder.h; sourceTree = "<group>"; };
+		E60C6E1304016DE2239D68F2 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		E60C6EA00F66EA1F5FF2F498 /* NSString-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString-Utilities.m"; sourceTree = "<group>"; };
+		E60C6EBE78E7AE13A63502DA /* NSDate-Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-Calendar.h"; sourceTree = "<group>"; };
+		E60C6F460F819BA7EAF2844B /* UIColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorAdditions.m; sourceTree = "<group>"; };
+		E60C6FF6F56CBC8CA10E8C2B /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ED3007115A7DF1C00A2C2D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED3007915A7DF1C00A2C2D0 /* UIKit.framework in Frameworks */,
+				0ED3007B15A7DF1C00A2C2D0 /* Foundation.framework in Frameworks */,
+				0ED3007D15A7DF1C00A2C2D0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED3006915A7DF1C00A2C2D0 = {
+			isa = PBXGroup;
+			children = (
+				0ED3007E15A7DF1C00A2C2D0 /* Demo App */,
+				0ED3009515A7E41A00A2C2D0 /* SSGraph */,
+				0ED3007715A7DF1C00A2C2D0 /* Frameworks */,
+				0ED3007515A7DF1C00A2C2D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ED3007515A7DF1C00A2C2D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3007415A7DF1C00A2C2D0 /* SSGraphDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ED3007715A7DF1C00A2C2D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3007815A7DF1C00A2C2D0 /* UIKit.framework */,
+				0ED3007A15A7DF1C00A2C2D0 /* Foundation.framework */,
+				0ED3007C15A7DF1C00A2C2D0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ED3007E15A7DF1C00A2C2D0 /* Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300EF15A7E49600A2C2D0 /* MainView.h */,
+				0ED300F015A7E49600A2C2D0 /* MainView.m */,
+				0ED300E915A7E48700A2C2D0 /* AnnotationProvider.h */,
+				0ED300EA15A7E48700A2C2D0 /* AnnotationProvider.m */,
+				0ED300EB15A7E48700A2C2D0 /* CSVFetchOperation.h */,
+				0ED300EC15A7E48700A2C2D0 /* CSVFetchOperation.m */,
+				0ED300ED15A7E48700A2C2D0 /* YahooHistoricalCSV.h */,
+				0ED300EE15A7E48700A2C2D0 /* YahooHistoricalCSV.m */,
+				0ED3008715A7DF1C00A2C2D0 /* AppDelegate.h */,
+				0ED3008815A7DF1C00A2C2D0 /* AppDelegate.m */,
+				0ED3008A15A7DF1C00A2C2D0 /* MainStoryboard.storyboard */,
+				0ED3007F15A7DF1C00A2C2D0 /* Supporting Files */,
+			);
+			name = "Demo App";
+			path = SSGraphDemo;
+			sourceTree = "<group>";
+		};
+		0ED3007F15A7DF1C00A2C2D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EBDD04C18BC864F00BFBEBA /* Images.xcassets */,
+				0EBDD04B18BC857A00BFBEBA /* Icon76.png */,
+				0EBDD04A18BC853300BFBEBA /* Icon152.png */,
+				0ED3008015A7DF1C00A2C2D0 /* Info.plist */,
+				0ED3008115A7DF1C00A2C2D0 /* InfoPlist.strings */,
+				0ED3008415A7DF1C00A2C2D0 /* main.m */,
+				0ED3008615A7DF1C00A2C2D0 /* SSGraphDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ED3009515A7E41A00A2C2D0 /* SSGraph */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3009615A7E41A00A2C2D0 /* Annotations */,
+				0ED3009E15A7E41A00A2C2D0 /* Axes */,
+				0ED300A515A7E41A00A2C2D0 /* DataSet */,
+				0ED300B115A7E41A00A2C2D0 /* SSGraphicHelpers.h */,
+				0ED300B215A7E41A00A2C2D0 /* SSGraphicHelpers.m */,
+				0ED300B315A7E41A00A2C2D0 /* SSGraphPoint.h */,
+				0ED300B415A7E41A00A2C2D0 /* SSGraphPoint.m */,
+				0ED300B515A7E41A00A2C2D0 /* SSGraphSyncher.h */,
+				0ED300B615A7E41A00A2C2D0 /* SSGraphSyncher.m */,
+				0ED300B715A7E41A00A2C2D0 /* SSGraphView.h */,
+				0ED300B815A7E41A00A2C2D0 /* SSGraphView.m */,
+				0ED300B915A7E41A00A2C2D0 /* Style */,
+				0ED300CD15A7E41A00A2C2D0 /* Formatters */,
+				E60C6015082DA5632FF30A46 /* SDK Additions */,
+			);
+			path = SSGraph;
+			sourceTree = "<group>";
+		};
+		0ED3009615A7E41A00A2C2D0 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3009715A7E41A00A2C2D0 /* SSAnnotation.h */,
+				0ED3009815A7E41A00A2C2D0 /* SSAnnotation.m */,
+				0ED3009915A7E41A00A2C2D0 /* SSAnnotationDataSource.h */,
+				0ED3009A15A7E41A00A2C2D0 /* SSAnnotationView.h */,
+				0ED3009B15A7E41A00A2C2D0 /* SSAnnotationView.m */,
+				0ED3009C15A7E41A00A2C2D0 /* SSImageAnnotationView.h */,
+				0ED3009D15A7E41A00A2C2D0 /* SSImageAnnotationView.m */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		0ED3009E15A7E41A00A2C2D0 /* Axes */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3009F15A7E41A00A2C2D0 /* SSAxisProvider.h */,
+				0ED300A015A7E41A00A2C2D0 /* SSAxisProvider.m */,
+				0ED300A115A7E41A00A2C2D0 /* SSHorizontalAxisPoint.h */,
+				0ED300A215A7E41A00A2C2D0 /* SSHorizontalAxisPoint.m */,
+				0ED300A315A7E41A00A2C2D0 /* SSVerticalAxisPoint.h */,
+				0ED300A415A7E41A00A2C2D0 /* SSVerticalAxisPoint.m */,
+			);
+			path = Axes;
+			sourceTree = "<group>";
+		};
+		0ED300A515A7E41A00A2C2D0 /* DataSet */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300A615A7E41A00A2C2D0 /* DatePeriodCache */,
+				0ED300AD15A7E41A00A2C2D0 /* SSDataSet.h */,
+				0ED300AE15A7E41A00A2C2D0 /* SSDataSet.m */,
+				0ED300AF15A7E41A00A2C2D0 /* SSTimeBasedDataSet.h */,
+				0ED300B015A7E41A00A2C2D0 /* SSTimeBasedDataSet.m */,
+			);
+			path = DataSet;
+			sourceTree = "<group>";
+		};
+		0ED300A615A7E41A00A2C2D0 /* DatePeriodCache */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300A715A7E41A00A2C2D0 /* SSDataPeriod.h */,
+				0ED300A815A7E41A00A2C2D0 /* SSDataPeriod.m */,
+				0ED300A915A7E41A00A2C2D0 /* SSDataPeriodDefinition.h */,
+				0ED300AA15A7E41A00A2C2D0 /* SSDataPeriodDefinition.m */,
+				0ED300AB15A7E41A00A2C2D0 /* SSDatePeriodCache.h */,
+				0ED300AC15A7E41A00A2C2D0 /* SSDatePeriodCache.m */,
+			);
+			path = DatePeriodCache;
+			sourceTree = "<group>";
+		};
+		0ED300B915A7E41A00A2C2D0 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300BA15A7E41A00A2C2D0 /* Bar Styles */,
+				0ED300BD15A7E41A00A2C2D0 /* Line Styles */,
+				0ED300C415A7E41A00A2C2D0 /* SSAnnotationStyle.h */,
+				0ED300C515A7E41A00A2C2D0 /* SSAnnotationStyle.m */,
+				0ED300C615A7E41A00A2C2D0 /* SSDataSetStyle.h */,
+				0ED300C715A7E41A00A2C2D0 /* SSDataSetStyle.m */,
+				0ED300C815A7E41A00A2C2D0 /* SSGraphStyle.h */,
+				0ED300C915A7E41A00A2C2D0 /* SSGraphStyle.m */,
+				0ED300CA15A7E41A00A2C2D0 /* SSStyle.h */,
+				0ED300CB15A7E41A00A2C2D0 /* SSStyleBase.h */,
+				0ED300CC15A7E41A00A2C2D0 /* SSStyleBase.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		0ED300BA15A7E41A00A2C2D0 /* Bar Styles */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300BB15A7E41A00A2C2D0 /* SSBarStyle.h */,
+				0ED300BC15A7E41A00A2C2D0 /* SSBarStyle.m */,
+			);
+			path = "Bar Styles";
+			sourceTree = "<group>";
+		};
+		0ED300BD15A7E41A00A2C2D0 /* Line Styles */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300BE15A7E41A00A2C2D0 /* SSLineStyle.h */,
+				0ED300BF15A7E41A00A2C2D0 /* SSLineStyle.m */,
+				0ED300C015A7E41A00A2C2D0 /* SSLineStyleBasic.h */,
+				0ED300C115A7E41A00A2C2D0 /* SSLineStyleBasic.m */,
+				0ED300C215A7E41A00A2C2D0 /* SSLineStyleShaded.h */,
+				0ED300C315A7E41A00A2C2D0 /* SSLineStyleShaded.m */,
+			);
+			path = "Line Styles";
+			sourceTree = "<group>";
+		};
+		0ED300CD15A7E41A00A2C2D0 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				0ED300CE15A7E41A00A2C2D0 /* SSPriceFormatter.h */,
+				0ED300CF15A7E41A00A2C2D0 /* SSPriceFormatter.m */,
+				0ED300D015A7E41A00A2C2D0 /* SSFormatters.h */,
+			);
+			name = Formatters;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E60C6015082DA5632FF30A46 /* SDK Additions */ = {
+			isa = PBXGroup;
+			children = (
+				E60C6309CFE70430CAB2348B /* SSUtilities.h */,
+				E60C63CB12950917BF8FBEDC /* NSDate */,
+				E60C6234F103CD70F5CF5D9C /* NSString */,
+				E60C6CA1108FCB9901DCBA94 /* UIColor-Expanded.h */,
+				E60C6BAA7E93F73B5F89A5D3 /* UIColor-Expanded.m */,
+				E60C6966B50E28C7138B54B8 /* UIColorAdditions.h */,
+				E60C6F460F819BA7EAF2844B /* UIColorAdditions.m */,
+				E60C66581E2D87B39DD25307 /* UIImage */,
+			);
+			path = "SDK Additions";
+			sourceTree = "<group>";
+		};
+		E60C6234F103CD70F5CF5D9C /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				E60C6D274AA8B4AD6460A36B /* NSStringBuilder.h */,
+				E60C640F96017DE39ED0A236 /* NSStringBuilder.m */,
+				E60C653A7C5166C054F09E19 /* NSString-Utilities.h */,
+				E60C6EA00F66EA1F5FF2F498 /* NSString-Utilities.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		E60C63CB12950917BF8FBEDC /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				E60C62921BF726759C5B8A59 /* NSDate+Utilities.h */,
+				E60C6FF6F56CBC8CA10E8C2B /* NSDate+Utilities.m */,
+				E60C6EBE78E7AE13A63502DA /* NSDate-Calendar.h */,
+				E60C61CA2C399ACE6E3BCAAD /* NSDate-Calendar.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
+		E60C66581E2D87B39DD25307 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				E60C6D20752A23223067C16D /* UIImage+Alpha.m */,
+				E60C6E1304016DE2239D68F2 /* UIImage+Alpha.h */,
+				E60C6CAD4CAC349947933BA7 /* UIImage+Resize.h */,
+				E60C68F88C464713F8FE8492 /* UIImage+Resize.m */,
+				E60C640AE183E98B28C1049A /* UIImage+RoundedCorner.h */,
+				E60C616FFCA0B8A2C51F8D76 /* UIImage+RoundedCorner.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ED3007315A7DF1C00A2C2D0 /* SSGraphDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED3009215A7DF1C00A2C2D0 /* Build configuration list for PBXNativeTarget "SSGraphDemo" */;
+			buildPhases = (
+				0ED3007015A7DF1C00A2C2D0 /* Sources */,
+				0ED3007115A7DF1C00A2C2D0 /* Frameworks */,
+				0ED3007215A7DF1C00A2C2D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSGraphDemo;
+			productName = GraphingTest;
+			productReference = 0ED3007415A7DF1C00A2C2D0 /* SSGraphDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ED3006B15A7DF1C00A2C2D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					0ED3007315A7DF1C00A2C2D0 = {
+						DevelopmentTeam = 5N9U7WT44Z;
+					};
+				};
+			};
+			buildConfigurationList = 0ED3006E15A7DF1C00A2C2D0 /* Build configuration list for PBXProject "SSGraphDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0ED3006915A7DF1C00A2C2D0;
+			productRefGroup = 0ED3007515A7DF1C00A2C2D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ED3007315A7DF1C00A2C2D0 /* SSGraphDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ED3007215A7DF1C00A2C2D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBDD04D18BC864F00BFBEBA /* Images.xcassets in Resources */,
+				0ED3008315A7DF1C00A2C2D0 /* InfoPlist.strings in Resources */,
+				0ED3008C15A7DF1C00A2C2D0 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ED3007015A7DF1C00A2C2D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E09FD4C15A7EF700092DEFE /* AnnotationProvider.m in Sources */,
+				0E09FD4E15A7EF710092DEFE /* CSVFetchOperation.m in Sources */,
+				0E09FD5015A7EF710092DEFE /* YahooHistoricalCSV.m in Sources */,
+				0ED3008515A7DF1C00A2C2D0 /* main.m in Sources */,
+				0ED3008915A7DF1C00A2C2D0 /* AppDelegate.m in Sources */,
+				0ED300D115A7E41A00A2C2D0 /* SSAnnotation.m in Sources */,
+				0ED300D215A7E41A00A2C2D0 /* SSAnnotationView.m in Sources */,
+				0ED300D315A7E41A00A2C2D0 /* SSImageAnnotationView.m in Sources */,
+				0ED300D415A7E41A00A2C2D0 /* SSAxisProvider.m in Sources */,
+				0ED300D515A7E41A00A2C2D0 /* SSHorizontalAxisPoint.m in Sources */,
+				0ED300D615A7E41A00A2C2D0 /* SSVerticalAxisPoint.m in Sources */,
+				0ED300D715A7E41A00A2C2D0 /* SSDataPeriod.m in Sources */,
+				0ED300D815A7E41A00A2C2D0 /* SSDataPeriodDefinition.m in Sources */,
+				0ED300D915A7E41A00A2C2D0 /* SSDatePeriodCache.m in Sources */,
+				0ED300DA15A7E41A00A2C2D0 /* SSDataSet.m in Sources */,
+				0ED300DB15A7E41A00A2C2D0 /* SSTimeBasedDataSet.m in Sources */,
+				0ED300DC15A7E41A00A2C2D0 /* SSGraphicHelpers.m in Sources */,
+				0ED300DD15A7E41A00A2C2D0 /* SSGraphPoint.m in Sources */,
+				0ED300DE15A7E41A00A2C2D0 /* SSGraphSyncher.m in Sources */,
+				0ED300DF15A7E41A00A2C2D0 /* SSGraphView.m in Sources */,
+				0ED300E015A7E41A00A2C2D0 /* SSBarStyle.m in Sources */,
+				0ED300E115A7E41A00A2C2D0 /* SSLineStyle.m in Sources */,
+				0ED300E215A7E41A00A2C2D0 /* SSLineStyleBasic.m in Sources */,
+				0ED300E315A7E41A00A2C2D0 /* SSLineStyleShaded.m in Sources */,
+				0ED300E415A7E41A00A2C2D0 /* SSAnnotationStyle.m in Sources */,
+				0ED300E515A7E41A00A2C2D0 /* SSDataSetStyle.m in Sources */,
+				0ED300E615A7E41A00A2C2D0 /* SSGraphStyle.m in Sources */,
+				0ED300E715A7E41A00A2C2D0 /* SSStyleBase.m in Sources */,
+				0ED300E815A7E41A00A2C2D0 /* SSPriceFormatter.m in Sources */,
+				0E09FD2315A7EF5A0092DEFE /* MainView.m in Sources */,
+				E60C622B1AA481CB9D152115 /* NSDate+Utilities.m in Sources */,
+				E60C6C174B45A7947D7C5270 /* NSDate-Calendar.m in Sources */,
+				E60C6E0E6D8B26A81BD62102 /* NSStringBuilder.m in Sources */,
+				E60C666CBD1A228A0F01BC6A /* NSString-Utilities.m in Sources */,
+				E60C6E87C39D5D7C2BD4DF85 /* UIColor-Expanded.m in Sources */,
+				E60C6111B4C7DB2DD6B6245B /* UIColorAdditions.m in Sources */,
+				E60C6671916B722BD5DD576B /* UIImage+Alpha.m in Sources */,
+				E60C6F2C54452E5E1FE51ED9 /* UIImage+Resize.m in Sources */,
+				E60C6A8F474C28EFF1FA8089 /* UIImage+RoundedCorner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0ED3008115A7DF1C00A2C2D0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ED3008215A7DF1C00A2C2D0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0ED3008A15A7DF1C00A2C2D0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ED3008B15A7DF1C00A2C2D0 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ED3009015A7DF1C00A2C2D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0ED3009115A7DF1C00A2C2D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ED3009315A7DF1C00A2C2D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSGraphDemo/SSGraphDemo-Prefix.pch";
+				INFOPLIST_FILE = SSGraphDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0ED3009415A7DF1C00A2C2D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSGraphDemo/SSGraphDemo-Prefix.pch";
+				INFOPLIST_FILE = SSGraphDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ED3006E15A7DF1C00A2C2D0 /* Build configuration list for PBXProject "SSGraphDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED3009015A7DF1C00A2C2D0 /* Debug */,
+				0ED3009115A7DF1C00A2C2D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ED3009215A7DF1C00A2C2D0 /* Build configuration list for PBXNativeTarget "SSGraphDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED3009315A7DF1C00A2C2D0 /* Debug */,
+				0ED3009415A7DF1C00A2C2D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0ED3006B15A7DF1C00A2C2D0 /* Project object */;
+}
